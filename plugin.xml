@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
-            id="cordova-plugin-pick-crop" version="1.2.1">
+            id="cordova-plugin-pick-crop" version="1.2.2">
 
         <name>Pick and Crop</name>
         <description>A cordova plugin for android ,ios to pick image and crop it</description>
@@ -24,7 +24,7 @@
                <true/>
             </config-file>
             <config-file target="*-Info.plist" parent="CFBundleDevelopmentRegion">
-            <string>aaa</string>
+            <string></string>
             </config-file>
             
             <config-file target="config.xml" parent="/*">
@@ -41,6 +41,16 @@
 
             <resource-file src="src/ios/Localizable/en.lproj"/>
             <resource-file src="src/ios/Localizable/zh-Hans.lproj"/>
+			
+			<preference name="CAMERA_USAGE_DESCRIPTION" default=" " />
+			 <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+				 <string>$CAMERA_USAGE_DESCRIPTION</string>
+			 </config-file>
+
+			 <preference name="PHOTOLIBRARY_USAGE_DESCRIPTION" default=" " />
+			 <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
+				 <string>$PHOTOLIBRARY_USAGE_DESCRIPTION</string>
+			 </config-file>
 
         </platform>
         <!-- android -->
