@@ -3,18 +3,18 @@
   Just support android and ios.
   
   
-#Install
+# Install
     cordova plugin add https://github.com/huangliop/cordova-plugin-pick-crop.git
-#Screen Shoot
+# Screen Shoot
 
   ![android-3](./screenshot-android-3.jpg)
   ![android-4](./screenshot-android-4.jpg)
   ![android-1](./screenshot-android-1.jpg)
   ![android-2](./screenshot-android-2.jpg)
 
-#Usage
+# Usage
 
-##Just pick a photo
+## Just pick a photo
 ```
  /**
      * just pick a image ,dont crop it
@@ -31,7 +31,7 @@ plugins.pickCrop.pick({
     console.error(error);
 })   
 ```
-##Pick and Crop a photo
+## Pick and Crop a photo
 ```
  /** 
      * @param {[[Type]]} params  [[set the result image's height]]
@@ -47,5 +47,5 @@ plugins.pickCrop.crop({
     console.error(error);
 })   
 ```
-#License
+# License
 This android is based on [android-crop](https://github.com/jdamcd/android-crop)
